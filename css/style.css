@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    
+}
+body{
+    color: #070210;
+    background-image: url(../imagens/background-desktop.png); 
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100%;
+    font-size: 1rem; 
+}
+main{
+    padding: 32px;
+    
+}
+.icon-placeholder{
+    width: 20px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    color: #000000ee;
+}
+.titulo-login{
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.welcome-login{
+    font-size: 0.8rem;
+    color: #000000ac;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#email, #senha{
+    border: 1.5px solid #00000080;
+    border-radius:12px;
+    padding: 8px 30px; 
+    margin-bottom: 8px; 
+    background-color: transparent;
+}
+
+.input-form{
+    font-weight: 700; 
+}
+#email::placeholder, #senha::placeholder {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000000ac;
+    width: 100%;
+}
+
+.login-senha{
+    font-size: 0.7rem;
+}
+.esqueceu-senha{
+    font-weight: 500;
+}
+.btn-login{
+    background-color: #f1787d;
+    color: #070210;
+    width: 82%;
+    margin:20px 0 8px 18px ;
+    height: 40px;
+    border-radius: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #f58d91;
+    transition: .6s ease-in-out;
+}
+.redes-sociais{
+   margin-top: 20px;
+}
+.titulo-redes{
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+.ul-redes {
+    font-size: 1rem;
+    width: 50%;
+}
+ul li{
+    border-radius: 100%; 
+    background-color: #e9cbcc;
+    padding: 6px;
+}
+
+.ul-redes li:hover{
+    text-shadow:#ed5156 2px 3px; 
+    transition: .2s;
+}
+
+
+/* TABLET */
+@media screen and (min-width:714px){
+    body{
+       background-image: url(../imagens/background-desktop-1024.png);
+       }
+    main{
+     width: 42%;
+     margin-left: 49%;
+    }
+   }
+   
+   /* 973px */
+   @media screen and (min-width:971px){
+       body{
+           background-image: url(../imagens/background-desktop-1024.png);
+           background-position: center top;
+       }
+       main{
+           width: 42%;
+           margin-left: 50%;
+          }
+   }
+   
+   
+   /* 1023px */
+   @media screen and (min-width:1023px){
+       body{
+           background-image: url(../imagens/background-desktop-1440.png);
+       }
+       main{
+           width: 40%;
+           margin: 4% 0 0 52% ;
+          }
+         .titulo-redes{
+          
+           font-size: 1.2rem;
+         }
+         .ul-redes {
+          font-size: 1.2rem;
+       }
+   }
+   
+   /* DESKTOP */
+   
+   @media screen and (min-width:1440px){
+       body{
+           background-image: url(../imagens/background-desktop-1440.png);
+         
+       }
+       main{
+           width: 38%;
+           margin: 5% 0 0 57% ;
+          }
+       .titulo-login{
+           font-size: 4rem;
+       }
+       .welcome-login, #email::placeholder, #senha::placeholder{
+           font-size: 1.3rem;
+       }
+       .input-form{
+           font-size: 1.6em;
+       }
+       #email, #senha{
+           padding: 18px 42px; 
+       }
+       .icon-placeholder{
+           width: 20px;
+           position: relative;
+           top: 40px;
+           left: 10px;
+           font-size: 1.5rem;
+       }
+          .login-senha{
+           font-size: 0.8rem;
+          }
+          .esqueceu-senha{
+           font-size:1rem;
+       }
+          .btn-login{
+           padding: 28px;
+           font-size: 1.7rem;
+           margin-top: 10%;
+          }
+          .redes-sociais{
+           margin-top: 0;
+           width: 80%;
+       }
+   }
+   
